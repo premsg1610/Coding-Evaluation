@@ -19,7 +19,7 @@ const searchMovies = async () => {
 
     const query = document.getElementById("search").value;
 
-    const res = await fetch(`http://www.omdbapi.com/?s=${query}&apikey=67e26a9`)
+    const res = await fetch(`https://www.omdbapi.com/?s=${query}&apikey=67e26a9`)
 
     const data = await res.json()
     console.log(data)
