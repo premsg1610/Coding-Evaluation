@@ -5,7 +5,14 @@
 let balance = JSON.parse(localStorage.getItem("amount"))
 
 let show_balance = document.getElementById("wallet")
-show_balance.innerText = balance
+if(balance == undefined)
+{
+    show_balance.innerText = 0
+}
+else{
+    show_balance.innerText = balance
+
+}
 
 
 function wallet(){
